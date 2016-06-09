@@ -1,0 +1,21 @@
+{
+  "name": "opencage-geocoder-client",
+  "version": "1.0.0",
+  "dependencies": {
+    "bluebird": {
+      "version": "3.4.0",
+      "from": "bluebird@latest",
+      "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-3.4.0.tgz"
+    },
+    "debug": {
+      "version": "2.2.0",
+      "from": "debug@latest",
+      "resolved": "https://registry.npmjs.org/debug/-/debug-2.2.0.tgz"
+    },
+    "ms": {
+      "version": "0.7.1",
+      "from": "ms@0.7.1",
+      "resolved": "https://registry.npmjs.org/ms/-/ms-0.7.1.tgz"
+    }
+  }
+}
