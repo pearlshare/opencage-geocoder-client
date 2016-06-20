@@ -1,6 +1,6 @@
 {
   "name": "opencage-geocoder-client",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Correctly encoded Opencagedata client",
   "main": "index.js",
   "scripts": {
