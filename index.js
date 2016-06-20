@@ -111,7 +111,13 @@ Opencage.prototype.requestData = function (queryOpts = {}) {
       this.logger("opencagedata:api:X-RateLimit-Limit", res.headers["X-RateLimit-Limit"]);
       this.logger("opencagedata:api:X-RateLimit-Remaining", res.headers["X-RateLimit-Remaining"]);
     }
-    res.body = JSON.parse(res.body);
+
+    var ct = res.headers["content-type"];
+    if (ct.indexOf('json') > -1) {
+      res.body = JSON.parse(res.body);
+    } else {
+      throw new Error("UNKNOWN_CONTENT_TYPE");
+    }
 
     if (res.body.status.code !== 200) {
       throw new Error(res.body.status.message);
